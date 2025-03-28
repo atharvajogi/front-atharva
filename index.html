@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    
+    <!-- Remix Icon CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="animated">
+            <a href="#" class="logo">Portfolio.</a>
+            <nav class="navbar">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Services</a>
+            </nav>
+        </header>
+
+        <section class="home">
+            <div class="home-detail">
+                <h1 class="fade-in">Atharva Jogi</h1>
+                <h2 class="fade-in"><span class="outlined">Frontend</span> Developer</h2>
+                <p class="fade-in">
+                    Passionate about crafting visually stunning and highly responsive web experiences, 
+                    I specialize in turning ideas into elegant, user-friendly designs with foundations in HTML, CSS and JavaScript.
+                </p>
+                <div class="download-social">
+                    <a href="#" class="btn">Enquire Here!</a>
+                    <div class="social-icons">
+                        <a href="#"><i class="ri-github-fill"></i></a>
+                        <a href="#"><i class="ri-linkedin-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home-img">
+                <div class="img-box">
+                    <img src="1-removebg-preview.png" alt="Atharva Jogi">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Script for Animations -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll('.fade-in').forEach((el, index) => {
+                setTimeout(() => {
+                    el.classList.add('visible');
+                }, index * 300);
+            });
+        });
+    </script>
+
+    <!-- Vercel Analytics Script -->
+    <script defer src="https://vercel.live/_vercel/insights/script.js"></script>
+
+</body>
+</html>

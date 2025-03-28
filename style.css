@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+body{
+    height:100vh;
+    padding: 0;
+    position: relative;
+    background: url("wp9081278.webp") no-repeat center / cover;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("wp9081278.webp") no-repeat center / cover;
+    filter: blur(5px); /* Increase value for stronger blur */
+    z-index: -1;
+}
+
+.container{
+    position: relative;
+    height: 100%;
+    background: rgba(255,255,255,.1);
+    border: 2px solid rgba(255,255,255,.10);
+    border-radius: 30px;
+}
+
+header{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding:25px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:100;
+}
+
+.logo{
+    font-size:25px;
+    color: #fff;
+    text-decoration:none;
+    font-weight:600;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.7);
+}
+
+header .active {
+    font-size: 25px;
+    color: #fff; /* Ensuring it's white */
+    text-decoration: none;
+    font-weight: 600;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.7); /* Adding a glow effect */
+}
+
+.navbar a {
+    font-size:18px;
+    color:#fff;
+    text-decoration:none;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.7);
+    font-weight:500;
+    margin-left:35px;
+    border-bottom:2px solid transparent;
+    transition:.15s;
+}
+
+.navbar a:hover 
+{
+    border-color:#fff;
+}
+
+.home{
+    display:flex;
+    align-items:center;
+    height:100%;
+    gap:50px;
+    padding:50px 5% 0;
+    color:#fff;
+}
+
+.home-detail h1{
+    font-size:55px;
+    line-height:1;
+}  
+
+.home-detail h2{
+    font-size:32px; 
+}
+
+.home-detail p{
+   margin: 10px 0 10px;
+   font-size: 18px; /* Increase font size */
+    line-height: 1.6; /* Improve readability */
+    font-weight: 400; /* Make it slightly bolder */
+    color: #fff; /* Ensure white text for contrast */
+    text-shadow: 50px 50px 50px rgba(0, 0, 0, 0.3); /* Add soft shadow */
+    max-width: 80%;
+}
+
+.home-detail .download-social{
+    display:flex;
+    align-items:center;
+}
+
+.btn{
+    display:inline-block;
+    padding: 10px 30px;
+    background:#fff;
+    border:2px solid #fff;
+    border-radius:40px;
+    box-shadow:0 0 10px #fff;
+    color:#333;
+    text-decoration:none;
+    font-weight:500;
+    transition: .5s;
+}
+
+.btn:hover{
+    background:transparent;
+    box-shadow:none;
+    color:#fff;
+}
+
+.home-detail .social-icons{
+    margin-left:20px;
+}
+
+.home-detail .social-icons a{
+    display: inline-flex;
+    padding:8px;
+    border:2px solid #fff;
+    border-radius:50%;
+    font-size:20px;
+    color:#fff;
+    text-decoration:none;
+}
+
+.home-detail .social-icons a:hover{
+    background:#fff;
+    box-shadow:0 0 10px #fff;
+    color:#333;
+    transition: .5s;
+}
+
+.home-img .img-box::before{
+    content:'';
+    position:absolute;
+    width:500px;
+    height:500px;
+}
+
+.home-img .img-box {
+    position: relative;
+    width: 35vw; /* Increase the size */
+    height: 35vw;
+    border: 4px solid #fff;
+    box-shadow: 0 0 20px #fff;
+    border-radius: 50%;
+    overflow: hidden; /* Ensures the image stays inside */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.home-img .img-box img {
+    position: absolute;
+    top: -5%; /* Move the image up */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%; /* Slightly increase width */
+    height: auto;
+    object-fit: cover;
+}
+
+
+
